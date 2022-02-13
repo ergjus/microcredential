@@ -1,0 +1,89 @@
+/* Utilities */
+
+:root {
+  --primary-color: #db0000;
+  --secondary-color: #4e0000;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+  background-color: #fff;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+.my-5 {
+  margin: 4rem 0;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.bold {
+  color: var(--primary-color);
+  font-weight: bolder;
+}

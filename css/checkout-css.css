@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #db0000;
+  --secondary-color: #760202;
+  --dark-text: #333;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--dark-text);
+  line-height: 1.6;
+  background-color: white;
+}
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+img {
+  width: 100%;
+}
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: var(--secondary-color);
+  border: 1px var(--secondary-color) solid;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.7);
+}
+
+.top-bar {
+  background-color: #760202;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 2em;
+  height: 100px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.body-content {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* .card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+} */
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  display: block;
+}

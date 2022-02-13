@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ergjus Alipaj | Checkout</title>
+    <link rel="stylesheet" href="css/checkout-css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <h2>Checkout</h2>
+      </div>
+      <div class="body-content">
+        <h3>Congratulation on your purchases!</h3>
+        <div class="flex">
+          <div class="flex-left">
+            <div class="card item1" item="item1">
+              <h2 id="itemName"></h2>
+              <p id="price"></p>
+            </div>
+            <div class="card item2">
+              <h2 id="itemName2"></h2>
+              <p id="price2"></p>
+            </div>
+            <div class="card item3">
+              <h2 id="itemName3"></h2>
+              <p id="price3"></p>
+            </div>
+          </div>
+
+          <div class="flex-right">
+            <div class="card item4">
+              <h2 id="itemName4"></h2>
+              <p id="price4"></p>
+            </div>
+            <div class="card item5">
+              <h2 id="itemName5"></h2>
+              <p id="price5"></p>
+            </div>
+            <div class="card item6">
+              <h2 id="itemName6"></h2>
+              <p id="price6"></p>
+            </div>
+          </div>
+        </div>
+        <a href="index.html" target="blank_" class="btn btn-outline">
+          Continue Shopping
+        </a>
+        <a onclick="clearcart();" class="btn btn-outline"> Clear Cart </a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      let item = document.getElementById("itemName");
+      let price = document.getElementById("price");
+      item.innerHTML = localStorage.getItem("shoe");
+      price.innerHTML = localStorage.getItem("price");
+
+      let item2 = document.getElementById("itemName2");
+      let price2 = document.getElementById("price2");
+      item2.innerHTML = localStorage.getItem("shoe2");
+      price2.innerHTML = localStorage.getItem("price2");
+
+      let item3 = document.getElementById("itemName3");
+      let price3 = document.getElementById("price3");
+      item3.innerHTML = localStorage.getItem("shoe3");
+      price3.innerHTML = localStorage.getItem("price3");
+
+      let item4 = document.getElementById("itemName4");
+      let price4 = document.getElementById("price4");
+      item4.innerHTML = localStorage.getItem("shoe4");
+      price4.innerHTML = localStorage.getItem("price4");
+
+      let item5 = document.getElementById("itemName5");
+      let price5 = document.getElementById("price5");
+      item5.innerHTML = localStorage.getItem("shoe5");
+      price5.innerHTML = localStorage.getItem("price5");
+
+      let item6 = document.getElementById("itemName6");
+      let price6 = document.getElementById("price6");
+      item6.innerHTML = localStorage.getItem("shoe6");
+      price6.innerHTML = localStorage.getItem("price6");
+
+      function clearcart() {
+        localStorage.clear();
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
